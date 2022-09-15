@@ -1,0 +1,34 @@
+@keyframes duckWing {
+    from {
+        background-position-x: 0px;
+    }
+    to {
+        background-position-x: -172px;
+    }
+}
+
+@keyframes killDuck {
+    0% {
+        background-position-x: -168px;
+    }
+    50% {
+        background-position-x: -168px;
+    }
+    70% {
+        background-position-x: -168px;
+    }
+}
+
+.duck {
+    height: 64px;
+    width: 85px;
+    background-position-x: 0px;
+    background-image: url("/public/assets/image/duck_sprite.svg");
+    animation: duckWing 500ms steps(2) infinite;
+    position: absolute;
+}
+
+.duck.kill {
+    background-position-x: -168px;
+    animation: killDuck 100ms steps(2);
+}

@@ -1,0 +1,11 @@
+.container {
+    min-width: 300px;
+    max-width: 500px;
+    position: absolute;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    text-align: center;
+}
